@@ -20,5 +20,5 @@ With help from AI to jumpstart your layout, you'll focus on structuring your con
 - Pink:       `#F16061`
 
 ### Fonts:
-- Proxima Nova
-- Avenir
+- Heading: Georgia
+- Body: Montserrat 
