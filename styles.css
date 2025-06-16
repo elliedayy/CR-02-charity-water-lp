@@ -95,11 +95,14 @@ header nav a {
   margin: 0 auto;             /* Center the content horizontally */
 }
 
-/* Stack headline and donation box vertically and center them */
+/* Move the headline and donation box to the right side of the hero section */
 .hero-text {
-  display: flex;              /* Use flex to stack children vertically */
-  flex-direction: column;     /* Stack children from top to bottom */
-  align-items: center;        /* Center children horizontally */
+  /* Add left margin to push the content to the right */
+  margin-left: 80px; /* Increase this value to move further right */
+  /* Keep stacking children vertically and centered to each other */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 500px;           /* Give more space for the headline */
   margin-right: 40px;         /* Space between text and image */
 }
