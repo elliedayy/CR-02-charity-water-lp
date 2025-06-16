@@ -164,7 +164,7 @@ header nav a {
   background: #f1f1f1;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .donation-box .donate-btn {
@@ -176,6 +176,11 @@ header nav a {
   font-weight: bold;
   margin-top: 10px;
   cursor: pointer;
+}
+
+/* Make the letter spacing of the 'Give clean water' button bigger */
+.donate-btn {
+  letter-spacing: 1.3px; /* Adds more space between each letter */
 }
 
 .microcopy {
@@ -196,6 +201,17 @@ header nav a {
   position: relative;            /* Needed for stacking above the box */
   z-index: 1;                    /* Make sure it appears above the box background */
   width: fit-content;            /* Only as wide as the text */
+}
+
+/* Use Montserrat font for all text inside the donation box */
+.donation-box,
+.donation-box * {
+  font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat for donation box text */
+}
+
+/* Make all buttons in the donation box have rounded corners */
+.donation-box button {
+  border-radius: 3px; /* Rounds the corners of the buttons */
 }
 
 /* Responsive: stack on small screens */
