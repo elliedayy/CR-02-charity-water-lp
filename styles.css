@@ -79,6 +79,11 @@ header nav a {
   text-decoration: none;
 }
 
+.give-btn:hover {
+  background-color: #000;    /* Black background */
+  color: #FFC907;            /* Yellow text */
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -208,6 +213,13 @@ header nav a {
   width: fit-content;            /* Only as wide as the text */
 }
 
+/* On hover, switch to black background and yellow text */
+.donate-btn:hover {
+  background-color: #000;    /* Black background */
+  color: #FFC907;            /* Yellow text */
+}
+
+
 /* Use Montserrat font for all text inside the donation box */
 .donation-box,
 .donation-box * {
@@ -221,16 +233,33 @@ header nav a {
 
 /* Responsive: stack on small screens */
 @media (max-width: 800px) {
+  /* Stack hero content vertically on small screens */
   .hero-content {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;      /* Stack items on top of each other */
+    align-items: center;         /* Center items horizontally */
   }
+
   .hero-text {
-    margin-right: 0;
-    max-width: 100%;
+    margin-left: 0;              /* Remove left margin on small screens */
+    max-width: 100%;             /* Allow text to use full width */
   }
+
   .hero-img {
-    margin-top: 30px;
-    max-width: 90%;
+    margin-top: 24px;            /* Add space above the image */
+    max-width: 90%;              /* Make image fit smaller screens */
+  }
+}
+
+/* Make text and buttons a bit smaller on very small screens */
+@media (max-width: 500px) {
+  .hero-text h1 {
+    font-size: 32px;             /* Smaller headline on small screens */
+  }
+  .donation-box {
+    padding: 14px 6px;           /* Less padding for small screens */
+    max-width: 98%;              /* Use almost full width */
+  }
+  .donation-box button {
+    font-size: 14px;             /* Smaller button text */
   }
 }
